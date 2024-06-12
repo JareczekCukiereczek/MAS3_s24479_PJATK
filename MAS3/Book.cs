@@ -32,4 +32,8 @@ public class Book : Material, IBorrowable, IReservable
         Console.WriteLine("Book is made by:  "+HighQualityPaper);
     }
     
+    public override string ToString()//info o typie obiektu
+    {
+        return $"{GetType().Name}: {Title} by {Author}";
+    }
 }
